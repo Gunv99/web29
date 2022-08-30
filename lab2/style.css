@@ -1,0 +1,32 @@
+.text-red{
+    color: rgb(255, 0, 0);
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text--green{
+    color: green;
+}
+
+.font-big{
+    font-size: 50px;
+}
+
+.list{
+    background-color: rgba(0, 0, 255, 0.386);
+}
+
+b{
+    vertical-align: sub;
+}
+
+.decoration{
+    text-decoration: underline solid coral 4px;
+}
+
+.spacing{
+    text-indent: 40px;
+    letter-spacing: 1px;    
+}

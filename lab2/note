@@ -1,0 +1,7 @@
+1. Class
+    Class là 1 thuộc tính của thẻ Html, cho phép đặt tên cho một loại các thẻ HTML tùy ý
+2 Đơn vị
+    kích cỡ: px
+    màu: RGB, #f
+    phân giải: pixel
+    tương đối(tính theo kích thước của 1 vật khác): %
