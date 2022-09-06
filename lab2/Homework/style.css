@@ -1,0 +1,71 @@
+html{
+    background-color: rgba(0, 0, 255, 0.052);
+}
+
+body{
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+}
+
+
+h1{
+    background-color: rgba(40, 33, 33, 0.288);
+    color: rgb(224, 32, 22);
+    text-align: center;
+    padding: 80px;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px rgba(254, 0, 0, 0.567);
+    margin: 0px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+img{
+    height: 400px;
+}
+
+figure{
+    padding: 15px;
+    margin-left: 25%;
+}
+
+.padding-h2{
+    padding: 20px ;
+}
+
+h3{
+    padding: 15px 0px 0px 15px;
+    
+}
+p{
+    padding-left: 10px;
+    text-indent: 25px;
+}
+.p-2{
+    margin: 10px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.div-page{
+    background-color: aqua;
+    padding: 10px;
+}
+
+.div1{
+    background-color: rgba(63, 68, 95, 0.704);
+    padding: 20px;
+}
+
+a{
+    color: rgb(14, 14, 210);
+}
