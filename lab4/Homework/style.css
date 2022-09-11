@@ -1,0 +1,120 @@
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.comtainer{
+    width: 1310px;
+}
+.new-anime{
+    width: 1310px;
+    
+}
+.new-anime-list{
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+i{
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.new-anime-card{
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.play{
+    height: 90px;
+    margin: 10px;
+}
+.new-anime-info{
+    width: 320px;
+    
+    color: aliceblue;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+}
+.new-anime-name{  
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+}.meta{
+    font-size: 13px;
+    display: flex;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between
+}
+.img1{
+    background-image: url(https://s199.imacdn.com/vg/2022/09/11/5b99a1196de60182_4749438c12185a22_30836166285762073.jpg);
+}
+.img2{
+    background-image:  url(https://s199.imacdn.com/vg/2022/07/05/a687599ca1594362_ffff803aa42f418f_3778216570184347118684.jpg);
+}
+.img3{
+    background-image:  url(https://s199.imacdn.com/vg/2022/05/10/691749b6281b18d0_6df2acf58c9cc613_2537116521718196118684.jpg);
+}
+.img4{
+    background-image:  url(https://s199.imacdn.com/vg/2022/07/05/f2654afa307fab26_3bb31a41a60e5ecc_11668716570193006118684.jpg);
+}
+.img5{
+    background-image:  url(https://s199.imacdn.com/vg/2022/09/10/7201647c8c712ad3_ecc187d64ed4c335_3053716627878017118684.jpg);
+}
+.img6{
+    background-image:  url(https://s199.imacdn.com/vg/2022/09/11/291433170b78a7d7_322bb7f1d451d340_24874166285752763.jpg);
+}
+.img7{
+    background-image:  url(https://s199.imacdn.com/vg/2022/07/12/a92f5d0ea3af0dee_c87944c0b0d1c414_13681516576178096118684.jpg);
+}
+.img8{
+    background-image:  url(https://s199.imacdn.com/vg/2022/09/10/b336d0bf94ef5d2b_69cb02751f1babe6_1699016627765063118684.jpg);
+}
+.img9{
+    background-image:  url(https://s199.imacdn.com/vg/2022/06/14/8c8299ffef341c89_f97400f532192843_4564416551431828118684.jpg);
+}
+.img10{
+    background-image:  url(https://s199.imacdn.com/vg/2022/09/09/115037e21c8e34f5_d2bf4c2eda44a681_3303716627359977118684.jpg);
+}
+.img11{
+    background-image:  url(https://s199.imacdn.com/vg/2022/06/07/9c540141ae3d7f05_a84d0e5d4d64dceb_34442165459032279674.jpg);
+}
+.img12{
+    background-image:  url(https://s199.imacdn.com/vg/2022/09/08/3c2ff608c4b04a67_ba62488d3167f11d_3138616626131586118684.jpg);
+}
+.news-anime-list{
+    width: 1310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news-anime-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 320px;
+    height: 90px;
+    margin-bottom: 10px;
+    
+}
+.news-img{
+    width: 150px;
+    height: 90px;
+}
+.news-info{
+    width: 150px;
+    height: 90px;
+    margin-top: 5px;
+    font-size: 16px;
+}
