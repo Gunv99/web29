@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #f5f5f5;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  
+}
+.flex {
+  display: flex;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.header {
+  background-color: #3092f5;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.nav-link,
+.sub-nav-link,
+.sub-sub-nav-link {
+  color: #757575;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 180px;
+  line-height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+}
+.title {
+  text-transform: capitalize;
+}
+.nav {
+  width: auto;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 1px black;
+}
+.nav-list,
+.sub-nav-list,
+.sub-sub-nav-list {
+  height: 320px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 0 12px;
+}
+.nav-img {
+  width: 920px;
+}
+.nav-list-item,
+.sub-nav-list-item,
+.sub-sub-nav-list-item {
+  height: 25px;
+}
+.nav-list-item:hover .nav-link {
+  color: #f36d00;
+  background: #e7e8ec;
+}
+.nav-list-item:hover .sub-nav-list {
+  display: block;
+}
+.nav-list-item:hover .icon {
+  display: block;
+}
+.sub-nav-list-item:hover .sub-nav-link {
+  color: #f36d00;
+  background: #e7e8ec;
+}
+.sub-nav-list-item:hover .sub-sub-nav-list {
+  display: block;
+}
+.sub-nav-list-item:hover .sub-icon {
+  display: block;
+}
+.sub-sub-nav-list-item:hover .sub-sub-nav-link {
+  color: #f36d00;
+}
+.sub-nav-list,
+.sub-sub-nav-list {
+  display: none;
+  left: 180px;
+  top: 0px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 1px black;
+  height: 100%;
+}
+.icon{
+  display: none;
+}
+.sub-icon{
+  display: none;
+}
+.card-header{
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-header-item{
+  width: 280px;
+}
+.card-header-item-link{
+  background-color: white;
+  border-radius: 50px;
+  width: auto;
+  align-items: center
+}
+.card-header-item-text{
+    display: block;
+    line-height: 40px;
+}
+.card-header-item-img{
+  height: 40px;
+  width: 40px;
+}
+
+
+
+h3{
+  font-size: 24px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.card-deal-header{
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card-deal-status{
+  color: #f57224;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.card-deal-time{
+  margin-left: 60px;
+}
+.card-deal-time-info{
+  margin-right: 10px;
+  font-size: 15px;
+}
+.card-deal-time-hour,
+.card-deal-time-minute,
+.card-deal-time-second {
+  border-radius: 2px;
+  font-weight: 500;
+  margin: 12px 6px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #d3232a;
+  text-align: center;
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+}
+.card-deal-content{
+  margin-right: 20px;
+  margin-left: auto;
+  border: 1px solid ;
+  color: #f57224;
+  border-color: #f57224;
+  height: 30px;
+  line-height: 20px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.container-deal{
+  background-color: white;
+}
+.card-deal-body{
+  gap: 10px;
+  background-color: white;
+}
+.card-deal-item{
+  height: 280px;
+}
+.card-deal-item-img, .deal-img{
+  width: 175px;
+  height: 175px;
+}
+.card-deal-item-info{
+  margin: 5px;
+}
+.card-deal-item-info-title{
+  height: 36px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.card-deal-item-info-money{
+  margin-bottom: 4px;
+    font-size: 18px;
+    color: #f57224;
+    letter-spacing: -.56px;
+    line-height: 18px;
+    height: 18px;
+}
+.card-deal-item-info-sale{
+
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 4px;
+}
+.dead-sale{
+  text-decoration: line-through;
+  line-height: 1px;
+}
+
+.line-through{
+  text-decoration: line-through;
+  padding-right: 8px;
+  color: #9e9e9e;
+}

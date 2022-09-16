@@ -1,0 +1,278 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+* {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+.bg-pink{
+    background-color: pink;
+}
+.bg-blue{
+    background-color: blue;
+}
+.bg-green{
+    background-color: rgba(14, 41, 14, 0.458);
+}
+.bg-red{
+    background-color: red;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.static{
+    /* đây là position mặc định của các phần tử trên trang */
+    position: static;
+}.fixed{
+    /* cố định 1 phần tử trên khung nhìn */
+    position: fixed;
+    width: unset;
+    height: unset;
+    /* khi 1 phần tử có position: fixed, thì vị trị góc ban đầu không tồn tại,  */
+    /* các thuộc tính này sẽ căn theo mép của html */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* có thẻ áp dụng cùng lúc 4 giá trị, nhưng chỉ có tác dụng khi không đặt width height */
+    /* thường sử dụng cho navbar hoặc các chatboxx= nút call,...,những thành phần cố định trên màn hình */
+    
+}
+.relative{
+    /* di chuyển nội dung so với vị trí ban đầu
+    không ảnh hưởng đến nội dung xung quanh */
+    position: relative;
+    /* các giá trị top bot right left */
+    /* chỉ áp dụng được 2 giá trị 1 lúc */
+    /* thực tế relative chỉ sử dụng để làm mốc cho các phần tử khác(absolute) tuân theo */
+    top: 0px;
+    left: 0px;
+    
+}
+.absolute{
+    /* thường phần tử có absolute thì nằm trong 1 phần tử khác có relative(có thẻ là absolute hoặc fixed)
+    lúc này thì vị trí sẽ cẳn theo phần tử cha gần phất có position */
+    position: absolute;
+    /* có thể áp dụng cả 4 thuộc tính(chỉ có tác dụng khi không có width height) */
+    /* thường dùng cho 1 lớp phủ hoặc 1 menu da cấp hoặc mục trang trí nhỏ*/
+    top: 50px;
+    left: 50px;
+}
+/* ps */
+.movie{
+    position: relative;
+    width: 320px;
+}
+.movie-img{
+    position: relative;
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.play, .movie-info{
+    position: absolute;
+}
+.play{
+    top: 10px;
+    left: 10px;
+    font-size: 50px;
+    z-index: -5;
+}
+.movie:hover .play {
+    z-index: +5;
+}
+.movie-info{
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+
+}
+.meta{
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.movie-name{
+    font-size: 18px;
+}
+.heart{
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+/* đc sư dụng khi ở trạng thái hover */
+/* áp dụng css khi phần tử này đc di chuột qua */
+.heart:hover{
+    background-color: blue;
+}
+/* áp dụng css cho các phần tử con khi phần tử cha đc hover qua */
+.heart:hover .circle{
+    background-color: black;
+}
+.heart:hover .name-heart{
+    color: brown;
+}
+.circle{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  
+}
+.top{
+    position: absolute;
+    bottom: 50px;
+}
+.left{
+    position: absolute;
+    right: 50px;
+}
+.name-heart{
+    position: absolute;
+    color: white;
+    transform: rotate(-45deg);
+    top: 18px;
+    left: 8px;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px rgb(0, 255, 0);
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.nav {
+    background-color: rgb(157, 157, 255);
+    padding-bottom: 4px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    background-color: rgb(39, 55, 78);
+    
+}
+
+.menu-item {
+    flex-grow: 1;
+    position: relative;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-link.active {
+    background-color: rgb(157, 157, 255);
+}
+
+.menu-item:hover .menu-link {
+    background-color: rgb(157, 157, 255);
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sub-item {
+    position: relative;
+}
+
+.sub-item:hover .sub-link {
+    background-color: rgb(157, 157, 255);
+    color: white;
+}
+
+.sub-item:hover .sub-sub-menu {
+    display: block;
+}
+
+.sub-link {
+    display: block;
+    padding: 15px 50px 15px 20px;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 100%;
+    left: 18px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+}
+
+.sub-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sub-sub-item:hover .sub-sub-link {
+    background-color: rgb(157, 157, 255);
+    color: white;
+}
+
+.sub-sub-link {
+    display: block;
+    padding: 15px 50px 15px 20px;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.left-triangle {
+    position: absolute;
+    right: 100%;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}

@@ -8,6 +8,8 @@ h1{
 }
 .comtainer{
     width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .new-anime{
     width: 1310px;

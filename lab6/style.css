@@ -1,0 +1,16 @@
+.choose{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+.choose:hover .taget{
+    display: block;
+}
+.taget{
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
