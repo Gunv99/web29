@@ -1,0 +1,75 @@
+.box{
+    height: 500px;
+    width: 700px;
+    background-color: red;
+}
+.heart,
+.circle{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    animation: heartd 1s infinite;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.heart{
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 280px;
+    
+    transform: rotate(45deg);
+    
+}
+.top{
+    border-radius: 50%;
+    bottom: 50%;
+}
+.left{
+    border-radius: 50%;
+    right: 50%;
+}
+
+@keyframes heartd{
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        width: 150px;
+        height: 150px;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+.box-box{
+    height: 500px;
+    width: 700px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-size: 25px;
+    color: white;
+    animation: fly 1s infinite ;
+    animation-delay: calc(--i*1 );
+}
+@keyframes fly {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-150%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --w: 550px;
+}
+body{
+    border: 0px;
+    padding: 0px;
+    
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.container{
+    max-width: var(--w);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.box{
+    border: 5px solid rgb(126,126,126);
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+
+}
+.mien{
+    width: inherit;
+    gap: 3px;
+    margin-bottom: 2px;
+    height: 35px;
+}
+.mien-item{
+    color: rgb(252,246,246) ;
+    background-color: rgb(201,92,84);
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+}
+.title{
+    height: 80px;
+}
+.title-item{
+    text-align: center;
+}
+.title-title{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(172,91,85);
+}
+.title-time{
+    margin: 15px;
+    
+}
+.print, .speaker{
+    margin-top: 15px;
+    font-size: 25px;
+}
+span{
+    border: 1px solid rgb(222,222,222);
+    width: 100%;
+    font-size: 25px;  
+}
+
+table {
+  border: 1px solid rgb(141,141,141);
+  border-spacing: 0;
+  width: 540px;
+}
+td{
+    border: 1px solid rgb(222,222,222);
+}
+
+.text{
+    width: 80px;
+    font-size: 18px;
+    text-align: center;
+}
+.ky-tu, .giai-nhat, .giai-ba, .giai-nam, .giai-bay{
+    background-color: rgb(249,249,249);
+}
+.db{
+    color: rgb(237,78,64);
+}
+.ky-tu-item{
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+}
+.dac-biet-item{
+    font-size: 35px;
+    color: rgb(234,51,35);
+    background-color: rgb(245,194,66);
+    text-align: center;
+}
+
+.footer-item{
+    width: inherit;
+    height: 32px;
+    text-align: center;
+}
+.giai-nhat-item,
+.giai-nhi-item,
+.giai-ba-item,
+.giai-tu-item,
+.giai-nam-item,
+.giai-sau-item,
+.giai-bay-item{
+    text-align: center;
+}
