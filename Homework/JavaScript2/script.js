@@ -12,11 +12,11 @@ function maxOfThree(a, b, c) {
         return a;
     } else if (b > a && b > c) {
         return b;
-    } else {
+    } else if (c > a && c > b){
         return c;
     }
 }
-console.log(maxOfThree(2, 4, 0));
+console.log(maxOfThree(2, 2, 1));
 /**
  * Tìm mùa tương ứng với tháng
  *
@@ -40,7 +40,7 @@ function findSeason(month) {
         return 'Fall'
     }
 }
-console.log(findSeason(4));
+console.log(findSeason(3));
 /**
  * Kiểm tra xem một năm có phải năm nhuận hay không
  *
@@ -56,13 +56,13 @@ console.log(findSeason(4));
  * @return {boolean} Năm này có phải năm nhuận hay không
  */
 function isLeafYear(year) {
-    if (year % 4 == 0 && year % 100 != 0 || year % 4 == 0 && year % 400 == 0) {
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
         return true;
     } else {
         return false;
     }
 }
-console.log(isLeafYear(2200));
+console.log(isLeafYear(2224));
 /**
  * Tìm số ngày trong tháng
  *
@@ -80,13 +80,13 @@ function findDayOfMonth(month, year) {
         return 31;
     } else if (month == 4 || month == 6 || month == 9 || month == 11 ) {
         return 30;
-    } else if (month == 2 && year % 4 == 0 && year % 100 != 0 || month == 2 && year % 4 == 0 && year % 400 == 0) {
+    } else if (month == 2 && year % 4 == 0 && year % 100 != 0 || month == 2 && year % 400 == 0) {
         return 29;
     } else if (month == 2) {
         return 28;
     }
 }
-console.log(findDayOfMonth(2, 2200));
+console.log(findDayOfMonth(2, 2020));
 /**
  * Xếp loại sinh viên theo số điểm trung bình
  *
